@@ -1,0 +1,1 @@
+genApiRequestBuilder hostBuilder apiKey resource = (\id -> hostBuilder apiKey resource id)

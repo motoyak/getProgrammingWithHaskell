@@ -1,0 +1,1 @@
+genApiRequestBuilder resource = getRequestUrl "http://example.com" "1337hAsk3ll" "book"
