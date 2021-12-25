@@ -1,0 +1,1 @@
+subseq start end xs = take (end-start) (drop start xs)
