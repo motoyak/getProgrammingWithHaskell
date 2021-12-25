@@ -1,0 +1,1 @@
+myTail (_:xs) = xs
