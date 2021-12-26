@@ -23,8 +23,11 @@ data Patient = Patient { name :: Name
                         ,bloodType :: BloodType }
 
 canDonateTo :: BloodType -> BloodType -> Bool
-canDonateTo (BloodTYpe O _) _ = True
-
+canDonateTo (BloodType O _) _ = True
+canDonateTo _ (BloodType AB _) = True
+canDonateTo (BloodType A _) (BloodType A _) = True
+canDonateTo (BloodType B _) (BloodType B _) = True
+canDonateTo _ _ = False
 
 canDonateTo' :: Patient -> Patient -> Bool
-canDonateTo'
+canDonateTo' p1 p2 = canDonateTo (bloodType p1) (bloodType p2)
