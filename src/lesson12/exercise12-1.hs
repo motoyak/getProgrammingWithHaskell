@@ -29,8 +29,6 @@ canDonateTo (BloodType A _) (BloodType A _) = True
 canDonateTo (BloodType B _) (BloodType B _) = True
 canDonateTo _ _ = False
 
-canDonateTo' :: Patient -> Patient -> Bool
-canDonateTo' p1 p2 = canDonateTo (bloodType p1) (bloodType p2)
+canDonateTo'' :: Patient -> Patient -> Bool
+canDonateTo'' p1 p2 = canDonateTo (bloodType p1) (bloodType p2)
 
-someFunc :: IO ()
-someFunc = putStrLn "Hello"

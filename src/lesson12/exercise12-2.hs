@@ -45,7 +45,7 @@ patientSummary p =    "**************\n"
                    ++ "Height: " ++ show (height p) ++ " in." ++ "\n"
                    ++ "Weight: " ++ show (weight p) ++ " lbs." ++ "\n"
                    ++ "Blood Type: " ++ showBloodType (bloodType p) ++ "\n"
-                   
+
 jackieSmith :: Patient
 jackieSmith = Patient {name = Name "Jackie" "Smith"
                        , age = 43
