@@ -1,0 +1,3 @@
+https://hackage.haskell.org/package/base-4.16.0.0/docs/Prelude.html#t:RealFrac
+
+Minimum complete definition is properFraction
